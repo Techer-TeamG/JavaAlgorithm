@@ -2,8 +2,8 @@ import java.util.*;
 import java.io.*;
 
 public class Ex2 {
-    public static void main (String[]args) {        
-    	BufferedReader kb = new BufferedReader(new stdStreamReader(System.in));
+    public static void main (String[]args) throws IOException{        
+    	BufferedReader kb = new BufferedReader(new InputStreamReader(System.in));
 		int num = Integer.parseInt(kb.readLine());
         String std = kb.readLine();
         int count = 0;
