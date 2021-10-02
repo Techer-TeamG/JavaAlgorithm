@@ -1,3 +1,5 @@
+package 배열;
+
 import java.io.*;
 
 public class BOJ_1701 {

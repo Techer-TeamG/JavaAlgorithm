@@ -1,4 +1,4 @@
-package JavaAlgorithm.Baekjoon.SeoYeon;
+package 배열;
 // 백준 https://www.acmicpc.net/problem/4949
 
 
