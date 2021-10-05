@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.*;
 
-public class Main {
+public class Ex2 {
 	
 	public static int solution(int n, int[] arr) {
 		int answer = 1;

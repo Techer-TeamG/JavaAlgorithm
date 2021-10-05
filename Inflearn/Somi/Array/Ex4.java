@@ -1,7 +1,6 @@
 import java.io.*;
-import java.util.*;
 
-public class Main {
+public class Ex4 {
 	
 	public static int[] solution(int n) {
 		int[] answer = new int[n];

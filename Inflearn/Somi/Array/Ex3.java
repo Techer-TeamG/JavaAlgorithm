@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.*;
 
-public class Main {
+public class Ex3 {
 	
 	public static String solution(int n, int[] A, int[] B) {
 		String answer = "";
