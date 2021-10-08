@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.*;
 
-public class Main {
+public class Q11656 {
 	public static String[] solution(String str) {
 		String[] answer = new String[str.length()];
 		

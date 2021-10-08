@@ -1,7 +1,6 @@
 import java.io.*;
-import java.util.*;
 
-public class Main {
+public class Q5525 {
 	
 	public static int solution(int n, int m, String s) {
 		int answer = 0;
