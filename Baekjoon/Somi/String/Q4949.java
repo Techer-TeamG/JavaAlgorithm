@@ -1,6 +1,6 @@
 import java.io.*;
 import java.util.*;
-public class Main {
+public class Q4949 {
 	public static String solution(String str) {
 		Stack<Character> stack = new Stack<>();
 	

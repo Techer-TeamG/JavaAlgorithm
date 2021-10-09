@@ -1,0 +1,31 @@
+import java.util.Scanner;
+
+public class Q2577 {
+    public int[] solution(int res){
+        String strRes = String.valueOf(res);
+        char[] digits = strRes.toCharArray();
+    
+        int[] result = new int[10];
+        for(int i = 0; i < digits.length; i++){
+            result[digits[i]-'0'] += 1;
+        }
+        return result;
+    }
+
+    public static void main (String[] args) {
+        Q2577 T = new Q2577();
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+        int c = sc.nextInt();
+        
+        int res = a*b*c;
+        
+        for(int x : T.solution(res)){
+            System.out.println(x);
+        }
+
+        sc.close();
+
+    }
+}
