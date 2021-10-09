@@ -1,0 +1,35 @@
+
+import java.util.Scanner;
+
+public class Q1769 {
+
+    public static void main (String[] args){
+        // Q1769 T = new Q1769();
+        int count = 0;
+        Scanner sc = new Scanner(System.in);
+        String strNum = sc.nextLine();
+
+        while(true) {
+            long sum = 0;
+            if(strNum.length() == 1) {    // x가 한자리일 경우 변환 과정 종료 
+                break;
+            }
+            for(int i = 0; i < strNum.length(); i++) {    // 각 자리를 모두 더함 
+                sum += Integer.parseInt(String.valueOf(strNum.charAt(i))); //char을 int로 바꾸려면 string으로 바꾸고 int로 변환해야함
+            }
+            count++;
+            strNum = String.valueOf(sum);    // 변환 결과를 x에 넣어줌
+        }
+
+        if(Integer.parseInt(String.valueOf(strNum)) % 3 == 0){
+            System.out.println(count);
+            System.out.println("YES");
+        }
+        else{
+            System.out.println(count);
+            System.out.println("NO");
+        }
+
+        sc.close();
+    }
+}
