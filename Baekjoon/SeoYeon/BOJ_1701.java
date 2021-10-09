@@ -17,6 +17,7 @@ public class BOJ_1701 {
 		int j = 0, n = s.length(), max = 0;
 		int pi[] = new int[n];
 		for(int i = 1; i < n; i++) {
+			// 부분 문자열 찾기를 실패했을 때, 이전에 성공했던 지점으로 돌아가기.
 			while(j > 0 && s.charAt(i) != s.charAt(j)) j = pi[j-1];
 			if(s.charAt(i) == s.charAt(j)) max = Math.max(max, pi[i] = ++j);
 		}
