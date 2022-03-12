@@ -1,0 +1,18 @@
+#python으로 작성함
+
+def solution():
+  total = 0
+  for i in range(n) :
+    student[i] -= b
+    total +=1
+    if 0 < student[i] :
+      total += student[i] // c
+      if student[i]%c != 0 :
+        total += 1
+  return total
+  
+
+n = int(input())
+student = list(map(int, input().split()))
+b, c = map(int, input().split())
+print(solution())
