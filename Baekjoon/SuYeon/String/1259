@@ -1,3 +1,5 @@
+#python으로 작성
+
 def solution(num):
   origin = num
   reverse = 0
