@@ -1,0 +1,17 @@
+#python으로 작성
+
+def solution(n) :
+  answer = 0
+  for i in range(n) :
+    answer += i
+    for j in str(i) :
+      answer += int(j)
+    if answer == n :
+      return i
+    answer = 0
+  if answer == 0 :
+    return 0
+
+if __name__ == "__main__" :
+  n = int(input())
+  print(solution(n))
