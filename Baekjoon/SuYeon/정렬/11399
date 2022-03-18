@@ -1,0 +1,10 @@
+#python으로 작성
+def solution() :
+  answer = 0
+  return answer
+  
+if __name__ : "__main__" :
+  list = []
+  n = int(input())
+  for i in range(n):
+    list.append(int(i))
