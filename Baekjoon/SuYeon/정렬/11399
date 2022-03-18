@@ -1,10 +1,22 @@
 #python으로 작성
-def solution() :
+
+def solution(n, time_list) :
   answer = 0
+  sum = 0
+  dp = []
+
+  for i in sorted(time_list) :
+    sum += i
+    dp.append(sum)
+
+  for j in dp :
+    answer += j
+    
   return answer
   
-if __name__ : "__main__" :
-  list = []
+if __name__ == "__main__" :
+  time_list = list()
   n = int(input())
-  for i in range(n):
-    list.append(int(i))
+  time_list = list(map(int,input().split()))  
+
+  print(solution(n, time_list))
