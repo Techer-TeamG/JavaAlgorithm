@@ -1,7 +1,13 @@
 #python으로 작성
-def solution() :
+def solution(word) :
   answer =0 
+  dp = []
+  dp[1] = word[0]
+  
+  for i in range(len(word)) :
+    
   return answer
   
 if __name__ == "__main__" :
-  print(solution))
+  
+  print(solution(word))
